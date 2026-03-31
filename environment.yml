@@ -1,0 +1,21 @@
+name: DevTrad
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - statsmodels
+  - requests
+  - tqdm
+  - matplotlib
+  - seaborn
+  - ipykernel
+  - maturin
+  - rust
+  - pip:
+      - scikit-fda==0.10.1
