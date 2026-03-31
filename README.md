@@ -65,8 +65,8 @@ In practice, the module is designed for researchers working with event-level Uni
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
-cd Stylized_Facts
+git clone https://github.com/DanieleMDiNosse/Deviations_from_Tradition
+cd Deviations_from_Tradition
 ```
 
 ### 2. Create the conda environment
