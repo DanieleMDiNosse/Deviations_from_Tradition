@@ -33,7 +33,7 @@ In practice, the module is designed for analyzing event-level Uniswap v3 data or
 - `tick_lower`: it's the upper tick of the liquidity provision range minted or burnt; not considered (`numpy.nan`) if the event is a swap.
 - `tick_upper`: it's the upper tick of the liquidity provision range minted or burnt; not considered (`numpy.nan`) if the event is a swap.
 - `tick`: price tick (defined as the floor of the price log base 1.0001) after the swap; not considered (`numpy.nan`) if the event is a mint or a burn.
-- `wallet`: wallet sending the order.
+- `wallet`: wallet starting the transaction.
 
 The module contains tools for MEV detection, return/liquidity diagnostics, long-memory analysis, and transition-structure estimation.
 
