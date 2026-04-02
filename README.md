@@ -114,16 +114,23 @@ import utils_DevTrad
 A typical workflow is:
 
 ```python
+import numpy as np
+import pandas as pd
 import utils_DevTrad as udt
 
+df = pd.read_csv()
+
 # Example: MEV / event labeling
-sandwich_labels = udt.find_sandwich(block_number, wallet, event)
+sandwich_labels = udt.find_sandwich(
+    df.block_number.values, df.wallet.values, df.Event.values )
 
 # Example: long-memory diagnostics
-results = udt.long_memory_test(series)
+results = udt.long_memory_test(
+    df.price.log().diff().dropna().values )
 
 # Example: transition probabilities
-probs = udt.transition_probabilities(event, shifts=[1, 2, 3])
+probs = udt.transition_probabilities(
+    df.Event.values, shifts=np.arange(1, 1_500) )
 ```
 
 The notebooks included in the repository show the entire research-oriented workflows, from event cleaning and labeling to stylized fact estimation and figure generation.
