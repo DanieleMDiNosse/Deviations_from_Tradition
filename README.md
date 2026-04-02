@@ -14,7 +14,7 @@ A central message of the paper is that these deviations are not random noise. Th
 
 ## What This Repository Contains
 
-The repository is organized around a single core module plus example notebooks.
+The repository is organized around a single core module and two example notebooks.
 
 ### Core module
 
@@ -126,7 +126,7 @@ results = udt.long_memory_test(series)
 probs = udt.transition_probabilities(event, shifts=[1, 2, 3])
 ```
 
-The notebooks included in the repository show fuller research-oriented workflows, from event cleaning and labeling to stylized-fact estimation and figure generation.
+The notebooks included in the repository show the entire research-oriented workflows, from event cleaning and labeling to stylized fact estimation and figure generation.
 
 ## Notes on Reproducibility
 
@@ -139,19 +139,8 @@ For reproducible use, it is recommended to:
 3. Use the notebooks as reference workflows.
 4. Keep the Python wrapper `utils_DevTrad.py` as the public interface.
 
-## Why This Paper May Be of Interest
-
-The paper speaks to several communities at once:
-
-- market microstructure researchers interested in how DeFi differs from centralized markets,
-- quantitative researchers studying high-frequency crypto data,
-- researchers working on MEV, block-building, and on-chain execution,
-- practitioners interested in realistic simulation of DEX activity.
-
-Its main contribution is to show that DEXs are not simply another venue where traditional stylized facts reappear unchanged. Instead, the combination of AMM design, concentrated liquidity, blockchain execution, and MEV creates a distinct microstructure with its own empirical regularities.
-
 ## Citation
 
-If you use this repository, please cite the associated paper:
+If this repository is useful for your research, please cite our paper:
 
 Di Nosse, D. M., Gatta, F., Lillo, F., & Jaimungal, S. (2025). *Deviations from Tradition: Stylized Facts in the Era of DeFi*. arXiv preprint arXiv:2510.22834.
