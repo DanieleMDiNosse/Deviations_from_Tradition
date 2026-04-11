@@ -8,9 +8,9 @@ This repository contains the research code associated with the paper:
 
 Decentralized Exchanges (DEXs) have become a major component of modern financial markets, yet their microstructure differs fundamentally from that of traditional exchanges. Instead of limit order books, most DEXs rely on automated market makers, and Uniswap v3 adds a further structural innovation through concentrated liquidity.
 
-The goal of the project is to study how these design choices reshape the classical stylized facts of market microstructure. Using high-frequency, event-level data from the 24 most active Uniswap v3 pools during 2023 and 2024, the paper documents how prices, liquidity, order flow, and event transitions differ from the benchmark patterns commonly observed in traditional finance.
+The goal of the project is to study how these design choices reshape the stylized facts of traditional markets' microstructure. Using high-frequency, event-level data, the paper documents how prices, liquidity, order flow, and event transitions differ from the benchmark patterns commonly observed in traditional finance. This repository contains the code for replicating and, potentially, expanding the analysis that we carried out on 24 Uniswap v3 pools between 2023 and 2024.
 
-A central message of the paper is that these deviations are not random noise. They are tightly connected to the specific organization of on-chain markets: block-based execution, concentrated liquidity, and the activity of Maximal Extractable Value (MEV) searchers, including sandwich attackers and Just-in-Time liquidity providers. The resulting empirical patterns are both economically relevant and useful for the construction of realistic high-frequency simulators of DEX dynamics.
+The observed deviations are not random noise. They are closely connected to the specific structure of on-chain markets, which is based on block-based execution, memory pools, concentrated liquidity, and the activity of Maximal Extractable Value (MEV) searchers, including sandwich attackers and Just-in-Time liquidity providers. The resulting empirical patterns are both economically relevant and useful for the construction of realistic high-frequency simulators of DEX dynamics.
 
 ## What This Repository Contains
 
@@ -136,15 +136,12 @@ probs = udt.transition_probabilities(
 The notebooks included in the repository show the entire research-oriented workflows, from event cleaning and labeling to stylized fact estimation and figure generation.
 
 ## Notes on Reproducibility
-
-This repository is research code associated with the paper rather than a polished production package. The goal is transparency and reproducibility of the empirical analysis.
-
 For reproducible use, it is recommended to:
 
 1. Create the environment from `environment.yml`.
 2. Compile the Rust crate locally with `maturin develop --release`.
-3. Use the notebooks as reference workflows.
-4. Keep the Python wrapper `utils_DevTrad.py` as the public interface.
+3. Import the Python wrapper `utils_DevTrad.py` to perform your own analysis.
+4. Use the notebooks as reference workflows.
 
 ## Citation
 
