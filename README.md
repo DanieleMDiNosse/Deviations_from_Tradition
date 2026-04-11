@@ -18,8 +18,8 @@ The repository is organized around a single core module and two example notebook
 
 ### Core module
 
-- [utils_DevTrad.py](./utils_DevTrad.py): main user-facing module.
-- [utils_DevTrad_Rust](./utils_DevTrad_Rust):(hidden) Rust crate compiled and imported from Python.
+- [utils_DevTrad.py](./utils_DevTrad.py): main module, it's a wrapper of the Rust library.
+- [utils_DevTrad_Rust](./utils_DevTrad_Rust):(hidden) Rust crate compiled and imported from the main module.
 
 In practice, the module is designed for analyzing event-level Uniswap v3 data or, generally, data coming from Concentrated Liquidity exchanges (up to proper columns naming). The data is provided as a `pandas.DataFrame`; each row is for an event. The columns used by the module functions are:
 - `amount`: amount of the liquidity minted or burnt; not considered (`numpy.nan`) if the event is a swap.
