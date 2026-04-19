@@ -37,12 +37,11 @@ In practice, the module is designed for analyzing event-level Uniswap v3 data or
 
 The module contains tools for MEV detection, return/liquidity diagnostics, long-memory analysis, and transition-structure estimation.
 
-### Example notebooks
+### Example notebook
 
 - [Single_Pool_Analysis_Prototype.ipynb](./Single_Pool_Analysis_Prototype.ipynb): Pipeline for the analysis of a single pool at once. It contains information on the time series, quantity of MEV events, transition probabilities from one event to another, and various AutoCorrelation Functions.
-- [Multiple_Analysis.ipynb](./Multiple_Analysis.ipynb): Code for the analysis of multiple pools at once, comparing statistics and properties of each of them. The pools are often divided according to the pair type or the pool fee tier.
 
-These notebooks provide examples of usage of the module `utils_DevTrad` and its functions. It shows of the results in the paper have been obtained.
+This notebook provides examples of the usage of the module `utils_DevTrad` and its functions. It shows how the results in the paper have been obtained.
 
 ## Main Analytical Components
 
@@ -133,7 +132,7 @@ probs = udt.transition_probabilities(
     df.Event.values, shifts=np.arange(1, 1_500) )
 ```
 
-The notebooks included in the repository show the entire research-oriented workflows, from event cleaning and labeling to stylized fact estimation and figure generation.
+The notebook included in the repository shows the entire research-oriented workflows, from event cleaning and labeling to stylized fact estimation and figure generation.
 
 ## Notes on Reproducibility
 For reproducible use, it is recommended to:
@@ -141,7 +140,7 @@ For reproducible use, it is recommended to:
 1. Create the environment from `environment.yml`.
 2. Compile the Rust crate locally with `maturin develop --release`.
 3. Import the Python wrapper `utils_DevTrad.py` to perform your own analysis.
-4. Use the notebooks as reference workflows.
+4. Use the notebook as a reference for workflows.
 
 ## Citation
 
