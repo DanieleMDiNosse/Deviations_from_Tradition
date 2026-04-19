@@ -1,5 +1,8 @@
 # Deviations from Tradition: Stylized Facts in the Era of DeFi
 
+[![Static Badge](https://img.shields.io/badge/DevTrad%20Paper%20SSRN-blue?style=plastic)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5663850) [![Static Badge](https://img.shields.io/badge/DevTrad%20Paper%20Arxiv-red?style=plastic)
+](https://arxiv.org/abs/2510.22834)
+
 This repository contains the research code associated with the paper:
 
 > Di Nosse, D. M., Gatta, F., Lillo, F., & Jaimungal, S. (2025). *Deviations from Tradition: Stylized Facts in the Era of DeFi*. arXiv preprint arXiv:2510.22834.
