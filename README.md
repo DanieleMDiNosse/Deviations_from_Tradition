@@ -21,6 +21,7 @@ The repository is organized around a single core module and two example notebook
 
 ### Core module
 
+- [data_provider.py](./data_provider.py): pre-requisite, contains data downloader and `pd.DataFrame` creation
 - [utils_DevTrad.py](./utils_DevTrad.py): main module, it's a wrapper of the Rust library.
 - [utils_DevTrad_Rust](./utils_DevTrad_Rust):(hidden) Rust crate compiled and imported from the main module.
 
